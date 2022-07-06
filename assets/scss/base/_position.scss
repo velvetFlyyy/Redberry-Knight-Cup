@@ -1,0 +1,67 @@
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.position-fixed {
+  position: fixed !important;
+}
+
+.position-sticky {
+  position: sticky !important;
+}
+
+.position-top {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.position-bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.position-left {
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.position-right {
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.position-top-left {
+  top: 0;
+  left: 0;
+}
+
+.position-top-right {
+  top: 0;
+  right: 0;
+}
+
+.position-bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.position-bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.position-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

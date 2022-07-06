@@ -1,0 +1,288 @@
+/*
+ * Remove the gap between embedded content and the bottom of their containers.
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+   * 1. Add responsiveness.
+   * 2. Auto-scale the height. Only needed if `height` attribute is present.
+   * 3. Corrects responsive `max-width` behavior if padding and border are used.
+   * 4. Exclude SVGs for IE11 because they don't preserve their aspect ratio.
+   */
+canvas,
+img,
+video {
+  /* 1 */
+  max-width: 100%;
+  /* 2 */
+  height: auto;
+  /* 3 */
+  box-sizing: border-box;
+}
+
+img:not([src]) {
+  /* 1 */
+  min-width: 1px;
+  /* 2 */
+  visibility: hidden;
+}
+
+/*
+  * Iframe
+  * Remove border in all browsers
+  */
+iframe {
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// ::selection {
+//   background: ;
+//   color: ;
+//   text-shadow: none;
+// }
+
+input,
+select,
+textarea {
+  box-sizing: border-box;
+  margin: 0;
+  border-radius: 0;
+  font: inherit;
+  -webkit-appearance: none;
+  max-width: 100%;
+  width: 100%;
+  border: 0 none;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+}
+
+body,
+html {
+  min-height: 100vh;
+  color: #000;
+}
+
+// Fonts
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+.ff-nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.ff-open {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+// Colors
+.c-fff {
+  color: #FFF;
+}
+
+.c-212529 {
+  color: #212529;
+}
+
+.c-E5E6E8 {
+  color: #E5E6E8;
+}
+
+.c-000 {
+  color: #000;
+}
+
+.c-95939A {
+  color: #95939A;
+}
+
+// Font Size
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.fs-80 {
+  font-size: 80px;
+}
+
+.lh-109 {
+  line-height: 109px;
+}
+
+.lh-27 {
+  line-height: 27px;
+}
+
+// Header
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 48.07%;
+  z-index: 5;
+}
+
+
+// Space
+.p-v-30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.p-l-60 {
+  padding-left: 60px;
+}
+
+.p-l-85 {
+  padding-left: 85px;
+}
+
+.p-t-265 {
+  padding-top: 265px;
+}
+
+.m-t-16 {
+  margin-top: 16px;
+}
+
+.m-b-102 {
+  margin-bottom: 102px;
+}
+
+.m-l-12 {
+  margin-left: 12px;
+}
+
+.m-l-26 {
+  margin-left: 26px;
+}
+
+
+// Sections
+.main-section {
+  background-color: tomato;
+  min-height: 100vh;
+
+  &#section-1 {
+    background-color: aquamarine;
+  }
+
+  &#section-2 {
+    background-color: wheat;
+  }
+
+  &#section-3 {
+    background-color: cadetblue;
+  }
+}
+
+.content-list {
+  & > li {
+    min-height: 100vh;
+  }
+}
+
+.fadeOut {
+  opacity: 0;
+  height: 0 !important;
+  top: 100% !important;
+  transition: opacity 0.4s, top 0.6s;
+}
+
+.fadeIn {
+  opacity: 1;
+  height: auto !important;
+  top: 0 !important;
+  transition: opacity 0.4s, top 0.6s;
+}
+
+.bg-imgs {
+  position: relative;
+
+  li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
