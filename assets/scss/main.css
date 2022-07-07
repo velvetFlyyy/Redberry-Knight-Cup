@@ -453,6 +453,10 @@ a:hover {
   color: #212529;
 }
 
+.c-093F68 {
+  color: #093F68;
+}
+
 .c-E5E6E8 {
   color: #E5E6E8;
 }
@@ -517,6 +521,14 @@ a:hover {
   font-size: 20px;
 }
 
+.fs-24 {
+  font-size: 24px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
 .fs-36 {
   font-size: 36px;
 }
@@ -525,16 +537,28 @@ a:hover {
   font-size: 80px;
 }
 
-.lh-109 {
-  line-height: 109px;
-}
-
 .lh-27 {
   line-height: 27px;
 }
 
+.lh-33 {
+  line-height: 33px;
+}
+
+.lh-35 {
+  line-height: 35px;
+}
+
+.lh-109 {
+  line-height: 109px;
+}
+
 .lh-150 {
   line-height: 150%;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .flex {
@@ -859,6 +883,10 @@ button::-moz-focus-inner {
 
 .m-t-16 {
   margin-top: 16px;
+}
+
+.m-t-24 {
+  margin-top: 24px;
 }
 
 .m-b-102 {
@@ -1196,5 +1224,11 @@ input {
   -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
   border-radius: 4px;
+}
+
+.blockquote-box {
+  position: absolute;
+  top: 295px;
+  left: 132px;
 }
 /*# sourceMappingURL=main.css.map */

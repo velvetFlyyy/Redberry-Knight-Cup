@@ -9,6 +9,8 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+// Font Weight
+
 .fw-100 {
     font-weight: 100;
 }
@@ -45,12 +47,25 @@
     font-weight: 900;
 }
 
+
+
+
+
+// Font Size
 .fs-16 {
     font-size: 16px;
 }
 
 .fs-20 {
     font-size: 20px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-26 {
+    font-size: 26px;
 }
 
 .fs-36 {
@@ -61,14 +76,31 @@
     font-size: 80px;
 }
 
-.lh-109 {
-    line-height: 109px;
-}
+
+// Line Height
 
 .lh-27 {
     line-height: 27px;
 }
 
+.lh-33 {
+    line-height: 33px;
+}
+
+.lh-35 {
+    line-height: 35px;
+}
+
+.lh-109 {
+    line-height: 109px;
+}
+
 .lh-150 {
     line-height: 150%;
 }
+
+// Text Style
+
+.italic {
+    font-style: italic;
+} 

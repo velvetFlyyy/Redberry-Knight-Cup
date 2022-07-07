@@ -26,6 +26,7 @@ $('#backHome').click(function () {
 
 $('#chessExperience').click(function () {
     $('.bg-imgs li').removeClass('fadeIn');
+    $('.bg-imgs li:nth-child(2)').addClass('fadeOut');
     $('.bg-imgs li:nth-child(3)').removeClass('fadeOut');
     $('.bg-imgs li:nth-child(3)').addClass('fadeIn');
 
