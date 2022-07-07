@@ -672,6 +672,7 @@ a:hover {
   background-color: #212529;
   color: #FFFFFF;
   border: 4px solid transparent;
+  padding: 9px 24px;
 }
 
 .btn-dark:hover, .btn-dark:focus {
@@ -683,6 +684,15 @@ a:hover {
 .btn-white {
   color: #212529;
   background-color: #FFF;
+  border: 1px solid #212529;
+  padding: 12px 24px;
+}
+
+.btn-white:hover, .btn-white:focus {
+  background: rgba(185, 180, 196, 0.3);
+  border: 1px solid rgba(194, 165, 249, 0.8);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 button {
@@ -698,9 +708,11 @@ button {
   margin: 0;
   border: none;
   border-radius: 8px;
-  padding: 13px 24px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
 }
 
 button:not(:disabled) {
@@ -950,6 +962,10 @@ html {
   margin-left: 26px;
 }
 
+.m-t-18 {
+  margin-top: 18px;
+}
+
 .main-section {
   background-color: tomato;
   min-height: 100vh;
@@ -1012,5 +1028,158 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#step-4 {
+  min-height: 100vh;
+  position: relative;
+}
+
+#step-4 > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.star1 {
+  -webkit-animation: star1 linear 2s infinite alternate;
+          animation: star1 linear 2s infinite alternate;
+}
+
+@-webkit-keyframes star1 {
+  0% {
+    fill: #FD5334;
+  }
+  100% {
+    fill: #dfeaef;
+  }
+}
+
+@keyframes star1 {
+  0% {
+    fill: #FD5334;
+  }
+  100% {
+    fill: #dfeaef;
+  }
+}
+
+.star2 {
+  -webkit-animation: star2 linear 3s infinite alternate;
+          animation: star2 linear 3s infinite alternate;
+}
+
+@-webkit-keyframes star2 {
+  0% {
+    fill: #dfeaef;
+  }
+  50% {
+    fill: #FD5334;
+  }
+  100% {
+    fill: #dfeaef;
+  }
+}
+
+@keyframes star2 {
+  0% {
+    fill: #dfeaef;
+  }
+  50% {
+    fill: #FD5334;
+  }
+  100% {
+    fill: #dfeaef;
+  }
+}
+
+.star3 {
+  -webkit-animation: star3 linear 5s infinite alternate;
+          animation: star3 linear 5s infinite alternate;
+}
+
+@-webkit-keyframes star3 {
+  0% {
+    fill: #dfeaef;
+  }
+  100% {
+    fill: #FD5334;
+  }
+}
+
+@keyframes star3 {
+  0% {
+    fill: #dfeaef;
+  }
+  100% {
+    fill: #FD5334;
+  }
+}
+
+.cloud {
+  -webkit-animation: cloud linear 1.5s infinite alternate;
+          animation: cloud linear 1.5s infinite alternate;
+}
+
+@-webkit-keyframes cloud {
+  0% {
+    fill: #FFF;
+  }
+  100% {
+    fill: #093f68;
+  }
+}
+
+@keyframes cloud {
+  0% {
+    fill: #FFF;
+  }
+  100% {
+    fill: #093f68;
+  }
+}
+
+.rotateAnimation {
+  -webkit-animation: rotateAnimation linear 1.5s infinite alternate;
+          animation: rotateAnimation linear 1.5s infinite alternate;
+}
+
+@-webkit-keyframes rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
 }
 /*# sourceMappingURL=main.css.map */
