@@ -7,6 +7,8 @@ $('#start').click(function () {
 
     $('.content-list > li:first-child').addClass('hidden');
     $('.content-list > li:nth-child(2)').removeClass('hidden');
+
+    // $('#nameInput').focus();
 });
 
 
@@ -32,6 +34,9 @@ $('#chessExperience').click(function () {
 
     $('.content-list > li:nth-child(2)').addClass('hidden');
     $('.content-list > li:nth-child(3)').removeClass('hidden');
+
+    $(".step-list li:first-child span").removeClass('active');
+    $(".step-list li:first-child span").addClass('done');
 });
 
 
@@ -46,6 +51,9 @@ $('#backInformation').click(function () {
 
     $('.content-list > li:nth-child(2)').removeClass('hidden');
     $('.content-list > li:nth-child(3)').addClass('hidden');
+
+    $(".step-list li:first-child span").addClass('active');
+    $(".step-list li:first-child span").removeClass('done');
 });
 
 
@@ -61,4 +69,7 @@ $('#finish').click(function () {
 
 
 
-
+// Form
+$('.input').keydown(function () {
+    $(".step-list li:first-child span").addClass('active');
+}); 
