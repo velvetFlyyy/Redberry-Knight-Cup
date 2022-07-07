@@ -1,0 +1,45 @@
+.star1 {
+    animation: star1 linear 2s infinite alternate;
+}
+
+@keyframes star1 {
+    0%   {fill: #FD5334;}
+    100%  {fill: rgb(223, 234, 239);}
+}
+  
+.star2 {
+    animation: star2 linear 3s infinite alternate;
+}
+
+@keyframes star2 {
+    0%   {fill: rgb(223, 234, 239);}
+    50%  {fill: #FD5334;}
+    100%  {fill: rgb(223, 234, 239);}
+}
+  
+.star3 {
+    animation: star3 linear 5s infinite alternate;
+}
+
+@keyframes star3 {
+    0%   {fill: rgb(223, 234, 239);}
+    100%  {fill: #FD5334;}
+}
+
+.cloud {
+    animation: cloud linear 1.5s infinite alternate;
+}
+
+@keyframes cloud {
+    0%   {fill: #FFF;} 
+    100%  {fill: rgb(9, 63, 104);} 
+}
+  
+.rotateAnimation {
+    animation: rotateAnimation linear 1.5s infinite alternate;
+}
+
+@keyframes rotateAnimation {
+    0%   {transform: rotate(0);} 
+    100%  {transform: rotate(-4deg); } 
+}

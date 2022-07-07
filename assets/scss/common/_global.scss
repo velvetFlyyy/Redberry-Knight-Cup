@@ -91,49 +91,6 @@ html {
   text-transform: uppercase;
 }
 
-.ff-nunito {
-  font-family: 'Nunito', sans-serif;
-}
-
-.ff-open {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.fw-100 {
-  font-weight: 100;
-}
-
-.fw-200 {
-  font-weight: 200;
-}
-
-.fw-300 {
-  font-weight: 300;
-}
-
-.fw-400 {
-  font-weight: 400;
-}
-
-.fw-500 {
-  font-weight: 500;
-}
-
-.fw-600 {
-  font-weight: 600;
-}
-
-.fw-700 {
-  font-weight: 700;
-}
-
-.fw-800 {
-  font-weight: 800;
-}
-
-.fw-900 {
-  font-weight: 900;
-}
 
 // Colors
 .c-fff {
@@ -158,6 +115,10 @@ html {
 
 // Font Size
 
+.fs-16 {
+  font-size: 16px;
+}
+
 .fs-20 {
   font-size: 20px;
 }
@@ -178,6 +139,10 @@ html {
   line-height: 27px;
 }
 
+.lh-150 {
+  line-height: 150%;
+}
+
 // Header
 .main-header {
   position: fixed;
@@ -187,44 +152,6 @@ html {
   z-index: 5;
 }
 
-
-// Space
-.p-v-30 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.p-l-60 {
-  padding-left: 60px;
-}
-
-.p-l-85 {
-  padding-left: 85px;
-}
-
-.p-t-265 {
-  padding-top: 265px;
-}
-
-.m-t-16 {
-  margin-top: 16px;
-}
-
-.m-b-102 {
-  margin-bottom: 102px;
-}
-
-.m-l-12 {
-  margin-left: 12px;
-}
-
-.m-l-26 {
-  margin-left: 26px;
-}
-
-.m-t-18 {
-  margin-top: 18px;
-}
 
 // Sections
 .main-section {
@@ -309,51 +236,9 @@ html {
   }
 }
 
-.star1 {
-  animation: star1 linear 2s infinite alternate;
-}
 
-@keyframes star1 {
-  0%   {fill: #FD5334;}
-  100%  {fill: rgb(223, 234, 239);}
-}
-
-
-.star2 {
-  animation: star2 linear 3s infinite alternate;
-}
-
-@keyframes star2 {
-  0%   {fill: rgb(223, 234, 239);}
-  50%  {fill: #FD5334;}
-  100%  {fill: rgb(223, 234, 239);}
-}
-
-
-.star3 {
-  animation: star3 linear 5s infinite alternate;
-}
-
-@keyframes star3 {
-  0%   {fill: rgb(223, 234, 239);}
-  100%  {fill: #FD5334;}
-}
-
-.cloud {
-  animation: cloud linear 1.5s infinite alternate;
-}
-
-@keyframes cloud {
-  0%   {fill: #FFF;} 
-  100%  {fill: rgb(9, 63, 104);} 
-}
-
-
-.rotateAnimation {
-  animation: rotateAnimation linear 1.5s infinite alternate;
-}
-
-@keyframes rotateAnimation {
-  0%   {transform: rotate(0);} 
-  100%  {transform: rotate(-4deg); } 
+input {
+  background: #FFFFFF;
+  box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  border-radius: 4px;
 }

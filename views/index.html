@@ -12,6 +12,8 @@
 
 <body>
 
+
+  <!-- Logo Box -->
   <header class="main-header bg-primary">
     <section class="logo-section flex flex-middle p-v-30 p-l-60">
       <svg width="276" height="24" viewBox="0 0 276 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,12 +83,12 @@
         <ul class="bg-imgs">
 
           <!-- Step 1 -->
-          <li class="fadeIn">
+          <li class="fadeIn" id="img-id-1">
             <img src="../assets/img/img-1.jpg" alt="">
           </li>
 
           <!-- Step 2 -->
-          <li class="fadeOut">
+          <li class="fadeOut" id="img-id-2">
             <img src="../assets/img/img-2.jpg" alt="">
             <blockquote>
               <p>“When you see a good move,
@@ -96,7 +98,7 @@
           </li>
 
           <!-- Step 3 -->
-          <li class="fadeOut">
+          <li class="fadeOut" id="img-id-3">
             <img src="../assets/img/img-3.jpg" alt="">
             <blockquote>
               <p>“Many have become chess masters;
@@ -106,7 +108,7 @@
           </li>
 
           <!-- Step 4 -->
-          <li class="fadeOut">
+          <li class="fadeOut" id="img-id-4">
             <img src="../assets/img/img-4.jpg" alt="">
           </li>
         </ul>
@@ -140,10 +142,41 @@
           <!-- Step 2 -->
           <li class="hidden" id="step-2">
             <div>
+              <h2>Start creating your account</h2>
+              <ol>
+                <li>
+                  <span>1</span>
+                  <p>
+                    Personal information
+                  </p>
+                </li>
+                <li>
+                  <span>2</span>
+                  <p>
+                    Chess experience
+                  </p>
+                </li>
+              </ol>
+              <form action="">
+                <legend>Personal information <span>This is basic informaton fields</span></legend>
+                <div>
+                  <input type="text" placeholder="Name *" required>
+                </div>
+                <div>
+                  <input type="email" placeholder="Email address *" required>
+                </div>
+                <div>
+                  <input type="tel" placeholder="Phone number *" required>
+                </div>
+                <div>
+                  <input type="date" placeholder="Date of birth *" required>
+                </div>
+              </form>
+
+
               <button id="backHome" class="btn-white">
                 back
               </button>
-
               <button id="chessExperience" class="btn-dark">
                 Next
                 <svg class="m-l-12" width="24" height="25" viewBox="0 0 24 25" fill="none"
@@ -338,40 +371,7 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $('#start').click(function () {
-        $('.bg-imgs li:first-child').addClass('fadeOut');
-        $('.bg-imgs li:nth-child(2)').addClass('fadeIn');
-
-        $('.content-list li:first-child').addClass('hidden');
-        $('.content-list li:nth-child(2)').removeClass('hidden');
-      });
-
-      $('#backHome').click(function () {
-        $('.bg-imgs li:first-child').addClass('fadeIn');
-        $('.bg-imgs li:first-child').removeClass('fadeOut');
-        $('.bg-imgs li:nth-child(2)').removeClass('fadeIn');
-
-        $('.content-list li:first-child').removeClass('hidden');
-        $('.content-list li:nth-child(2)').addClass('hidden');
-      });
-
-      $('#chessExperience').click(function () {
-        $('.bg-imgs li:nth-child(2').addClass('fadeOut');
-        $('.bg-imgs li:nth-child(3)').addClass('fadeIn');
-
-        $('.content-list li:nth-child(2)').addClass('hidden');
-        $('.content-list li:nth-child(3)').removeClass('hidden');
-      });
-
-      $('#finish').click(function () {
-        $('.bg-imgs li:nth-child(3').addClass('fadeOut');
-        $('.bg-imgs li:nth-child(4)').addClass('fadeIn');
-
-        $('.content-list li:nth-child(3)').addClass('hidden');
-        $('.content-list li:nth-child(4)').removeClass('hidden');
-      });
-    </script>
+    <script src="../assets/js/app.js"></script>
 
   </main>
 </body>
