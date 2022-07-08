@@ -901,12 +901,24 @@ button::-moz-focus-inner {
   margin-top: 24px;
 }
 
+.m-t-70 {
+  margin-top: 70px;
+}
+
 .m-t-88 {
   margin-top: 88px;
 }
 
 .m-b-102 {
   margin-bottom: 102px;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
+}
+
+.m-b-36 {
+  margin-bottom: 36px;
 }
 
 .m-b-40 {
@@ -1277,7 +1289,7 @@ input {
       -ms-flex-align: center;
           align-items: center;
   margin-left: -77px;
-  margin-bottom: 112px;
+  margin-bottom: 60px;
 }
 
 .step-list li {
@@ -1349,5 +1361,79 @@ input {
   line-height: 150%;
   color: #000000;
   margin-top: 4px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #212529;
+  font-family: 'Open Sans', sans-serif;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-box input.flyLabel ~ label {
+  opacity: 0 !important;
+  bottom: -30px;
+  pointer-events: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.input-box input:focus ~ label {
+  opacity: 0;
+  bottom: -30px;
+  pointer-events: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.input-box input:focus {
+  background: #E9ECEF;
+  -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.input-box input::-webkit-input-placeholder {
+  display: none;
+}
+
+.input-box input:-ms-input-placeholder {
+  display: none;
+}
+
+.input-box input::-ms-input-placeholder {
+  display: none;
+}
+
+.input-box input::placeholder {
+  display: none;
+}
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #212529;
+  position: absolute;
+  left: 16px;
+  bottom: 8px;
+  right: 100px;
+  background: #FFF;
+  cursor: pointer;
+}
+
+label span {
+  color: #DC3545;
 }
 /*# sourceMappingURL=main.css.map */

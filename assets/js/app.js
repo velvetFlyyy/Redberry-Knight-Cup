@@ -72,4 +72,44 @@ $('#finish').click(function () {
 // Form
 $('.input').keydown(function () {
     $(".step-list li:first-child span").addClass('active');
-}); 
+});
+
+
+$('#nameInput').keyup(function () {
+    if ($(this).val()) {
+        let userName = $(this).val();
+        $(this).addClass('flyLabel');
+    } else {
+        $(this).removeClass('flyLabel');
+    }
+});
+
+
+$('#emailInput').keyup(function () {
+    if ($(this).val()) {
+        let userName = $(this).val();
+        $(this).addClass('flyLabel');
+    } else {
+        $(this).removeClass('flyLabel');
+    }
+});
+
+
+$('#telInput').keyup(function () {
+    if ($(this).val()) {
+        let userName = $(this).val();
+        $(this).addClass('flyLabel');
+    } else {
+        $(this).removeClass('flyLabel');
+    }
+});
+
+
+$('#dateInput').blur(function () {
+    if ($(this).val()) {
+        let userName = $(this).val();
+        $(this).addClass('flyLabel');
+    } else {
+        $(this).removeClass('flyLabel');
+    }
+});
