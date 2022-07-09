@@ -1313,6 +1313,20 @@ input {
   padding-left: 77px;
 }
 
+.step-list li:last-child {
+  position: relative;
+}
+
+.step-list li:last-child::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  height: 1px;
+  background: rgba(185, 180, 196, 0.3);
+  left: -48px;
+  width: 160px;
+}
+
 .step-list span {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
@@ -1485,5 +1499,68 @@ label span {
   opacity: 0;
   -webkit-transition: 0.01s;
   transition: 0.01s;
+}
+
+.messenger {
+  position: fixed;
+  z-index: 3;
+  top: 200px;
+  right: 48px;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 350px;
+}
+
+.messenger > svg {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 20px;
+  height: 20px;
+}
+
+.messenger p {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212529;
+  padding: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.messenger h3 {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #DC3545;
+  padding: 9px 40px;
+}
+
+.messenger .close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  cursor: pointer;
+}
+
+.messenger .close:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.messenger.show {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */

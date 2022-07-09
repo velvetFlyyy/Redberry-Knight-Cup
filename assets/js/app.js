@@ -172,18 +172,47 @@ $('#chessExperience').click(function () {
 
         $(".step-list li:first-child span").removeClass('active');
         $(".step-list li:first-child span").addClass('done');
+
+        $('.messenger').removeClass('show');
+
+
     } else if (nameInput.length < 2) {
-        alert('სახელის ველის შევსება სავალდებულოა, სიმბოლოების რაოდენობა უნდა აღემატებოდეს 2-ს');
+        let message = 'Filling the name field is mandatory, the number of characters must exceed 2';
+        let title = 'Invalid Name';
+
+        $('.messenger').addClass('show');
+        $('.messenger h3').text(title);
+        $('.messenger p').text(message);
+
     } else if (emailInput.length < 2 || !validateEmail(emailInput)) {
-        alert('ელ. ფოსტის ველის შევსება სავალდებულოა, ელ. ფოსტა უნდა მთავრდებოდეს redberry.ge, მაგალითად: Info@redberry.ge');
+        let message = 'E-mail is mandatory, E-mail should end with redberry.ge, for example: Info@redberry.ge';
+        let title = 'Invalid E-mail';
+
+        $('.messenger').addClass('show');
+        $('.messenger h3').text(title);
+        $('.messenger p').text(message);
+
     } else if (telInput.length < 9) {
-        alert('ტელეფონის ველის შევსება სავალდებულოა, სიმბოლოების რაოდენობა უნდა იყოს 9');
+        let message = 'Phone field is mandatory, the number of characters must be 9';
+        let title = 'Invalid phone';
+
+        $('.messenger').addClass('show');
+        $('.messenger h3').text(title);
+        $('.messenger p').text(message);
     } else if (dateInput.length < 2) {
-        alert('თარიღის ველის შევსება სავალდებულოა');
+        let message = 'Date field is mandatory';
+        let title = 'Invalid Date';
+
+        $('.messenger').addClass('show');
+        $('.messenger h3').text(title);
+        $('.messenger p').text(message);
     }
 });
 
 
+$('.close').click(function () {
+    $(this).parent().removeClass('show');
+});
 
 // Step 3
 
