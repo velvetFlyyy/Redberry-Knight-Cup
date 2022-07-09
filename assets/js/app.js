@@ -102,6 +102,10 @@ $('#dateInput').blur(function () {
 });
 
 
+$('#registerForm input[name=participated]').on('change', function () {
+    let participatedValue = $('input[name=participated]:checked', '#registerForm').val();
+    localStorage.setItem("Participated", participatedValue);
+});
 
 
 // Number Only
@@ -136,7 +140,7 @@ $('#dateInput').blur(function () {
 $(document).ready(function () {
     $("#telInput").inputFilter(function (value) {
         return /^\d*$/.test(value);    // Allow digits only, using a RegExp
-    }, "გთხოვთ შეიყვანოთ ციფრები");
+    }, "Please enter numbers");
 
 
     // დასეტილის აღება
@@ -144,7 +148,11 @@ $(document).ready(function () {
     const Email = localStorage.getItem('Email');
     const Tel = localStorage.getItem('Tel');
     const Date = localStorage.getItem('Date');
+    const Participated = localStorage.getItem('Participated');
 
+    if (Participated) {
+        $("input[value=" + Participated + "]").prop("checked", true);
+    }
 
     if (UserName) {
         $('#nameInput').val(localStorage.getItem("UserName"));
@@ -167,13 +175,14 @@ $(document).ready(function () {
         $('#telInput').removeClass('flyLabel');
     }
 
-
     if (Date) {
         $('#dateInput').val(localStorage.getItem("Date"));
         $('#dateInput').addClass('flyLabel');
     } else {
         $('#dateInput').removeClass('flyLabel');
     }
+
+
 });
 
 

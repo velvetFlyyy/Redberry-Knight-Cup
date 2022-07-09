@@ -300,20 +300,20 @@ input {
       box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
       transition: 0.3s;
 
-      & ~ label {
+      & ~ .label {
         background: #FFEFEF;
         transition: 0.3s;
       }
     }
 
-    &.flyLabel ~ label {
+    &.flyLabel ~ .label {
       opacity: 0 !important;
       bottom: -30px;
       pointer-events: none;
       transition: 0.2s;
     }
 
-    &:focus ~ label {
+    &:focus ~ .label {
       opacity: 0;
       bottom: -30px;
       pointer-events: none;
@@ -332,7 +332,7 @@ input {
   }
 }
 
-label {
+.label {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -431,5 +431,44 @@ label {
     opacity: 1;
     pointer-events: auto;
     transition: 0.3s;
+  }
+}
+
+.form-step-2 {
+  p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #212529;
+    margin-bottom: 20px;
+  }
+}
+
+.radio-box {
+  display: flex;
+  align-items: center;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+  }
+
+  label {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #212529;
+  }
+
+  input {
+    -webkit-appearance: auto;
+    box-shadow: none;
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    accent-color: #0D6EFD;
   }
 }

@@ -1405,13 +1405,13 @@ input {
   transition: 0.3s;
 }
 
-.input-box input.alert ~ label {
+.input-box input.alert ~ .label {
   background: #FFEFEF;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.input-box input.flyLabel ~ label {
+.input-box input.flyLabel ~ .label {
   opacity: 0 !important;
   bottom: -30px;
   pointer-events: none;
@@ -1419,7 +1419,7 @@ input {
   transition: 0.2s;
 }
 
-.input-box input:focus ~ label {
+.input-box input:focus ~ .label {
   opacity: 0;
   bottom: -30px;
   pointer-events: none;
@@ -1451,7 +1451,7 @@ input {
   display: none;
 }
 
-label {
+.label {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -1465,7 +1465,7 @@ label {
   cursor: pointer;
 }
 
-label span {
+.label span {
   color: #DC3545;
 }
 
@@ -1562,5 +1562,51 @@ label span {
   pointer-events: auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.form-step-2 p {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #212529;
+  margin-bottom: 20px;
+}
+
+.radio-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio-box > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 18px;
+}
+
+.radio-box label {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212529;
+}
+
+.radio-box input {
+  -webkit-appearance: auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-right: 6px;
+  width: 20px;
+  height: 20px;
+  accent-color: #0D6EFD;
 }
 /*# sourceMappingURL=main.css.map */
