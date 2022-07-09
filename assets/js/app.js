@@ -140,30 +140,40 @@ $(document).ready(function () {
 
 
     // დასეტილის აღება
-    if (localStorage.getItem("UserName") !== null) {
-        // alert(localStorage.getItem("UserName"));
+    const UserName = localStorage.getItem('UserName');
+    const Email = localStorage.getItem('Email');
+    const Tel = localStorage.getItem('Tel');
+    const Date = localStorage.getItem('Date');
+
+
+    if (UserName) {
         $('#nameInput').val(localStorage.getItem("UserName"));
         $('#nameInput').addClass('flyLabel');
+    } else {
+        $('#nameInput').removeClass('flyLabel');
     }
 
-    if (localStorage.getItem("Email") !== null) {
-        // alert(localStorage.getItem("Email"));
+    if (Email) {
         $('#emailInput').val(localStorage.getItem("Email"));
         $('#emailInput').addClass('flyLabel');
+    } else {
+        $('#emailInput').removeClass('flyLabel');
     }
 
-    if (localStorage.getItem("Tel") !== null) {
-        // alert(localStorage.getItem("Tel"));
+    if (Tel) {
         $('#telInput').val(localStorage.getItem("Tel"));
         $('#telInput').addClass('flyLabel');
+    } else {
+        $('#telInput').removeClass('flyLabel');
     }
 
-    if (localStorage.getItem("Date") !== null) {
-        // alert(localStorage.getItem("Date"));
+
+    if (Date) {
         $('#dateInput').val(localStorage.getItem("Date"));
         $('#dateInput').addClass('flyLabel');
+    } else {
+        $('#dateInput').removeClass('flyLabel');
     }
-
 });
 
 
