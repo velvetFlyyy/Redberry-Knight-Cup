@@ -893,6 +893,10 @@ button::-moz-focus-inner {
   padding-top: 265px;
 }
 
+.m-t-4 {
+  margin-top: 4px;
+}
+
 .m-t-16 {
   margin-top: 16px;
 }
@@ -1379,6 +1383,20 @@ input {
   cursor: pointer;
 }
 
+.input-box input.alert {
+  background: #FFEFEF;
+  -webkit-box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-box input.alert ~ label {
+  background: #FFEFEF;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .input-box input.flyLabel ~ label {
   opacity: 0 !important;
   bottom: -30px;
@@ -1435,5 +1453,37 @@ label {
 
 label span {
   color: #DC3545;
+}
+
+.check {
+  position: absolute;
+  right: 18px;
+  bottom: 2px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  pointer-events: none;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.check.hide {
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#dateInput ~ .check {
+  background: #FFF;
+}
+
+#dateInput:focus ~ .check {
+  opacity: 0;
+  -webkit-transition: 0.01s;
+  transition: 0.01s;
 }
 /*# sourceMappingURL=main.css.map */

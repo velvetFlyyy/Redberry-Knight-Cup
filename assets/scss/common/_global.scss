@@ -281,6 +281,17 @@ input {
     border-radius: 4px;
     cursor: pointer;
 
+    &.alert  {
+      background: #FFEFEF;
+      box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.125);
+      transition: 0.3s;
+
+      & ~ label {
+        background: #FFEFEF;
+        transition: 0.3s;
+      }
+    }
+
     &.flyLabel ~ label {
       opacity: 0 !important;
       bottom: -30px;
@@ -325,3 +336,27 @@ label {
   }
 }
 
+.check  {
+  position: absolute;
+  right: 18px;
+  bottom: 2px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  transition: opacity 0.3s;
+
+  &.hide {
+    opacity: 0;
+    transition: 0.3s;
+  }
+}
+
+#dateInput ~ .check {
+  background: #FFF;
+}
+
+#dateInput:focus ~ .check {
+  opacity: 0;
+  transition: 0.01s;
+}
