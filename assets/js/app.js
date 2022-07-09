@@ -9,6 +9,9 @@ $('.input').keydown(function () {
 $('#nameInput').keyup(function () {
     let nameInput = $('#nameInput').val();
 
+    localStorage.setItem("UserName", nameInput);
+
+
     if (nameInput.length > 2) {
         $(this).siblings().removeClass('hide');
         $(this).removeClass('alert');
@@ -33,6 +36,8 @@ function validateEmail($emailInput) {
 $('#emailInput').keyup(function () {
     let emailInput = $('#emailInput').val();
 
+    localStorage.setItem("Email", emailInput);
+
 
     if (emailInput.length > 2 && validateEmail(emailInput)) {
         $(this).siblings().removeClass('hide');
@@ -54,6 +59,9 @@ $('#emailInput').keyup(function () {
 $('#telInput').keyup(function () {
     let telInput = $('#telInput').val();
 
+    localStorage.setItem("Tel", telInput);
+
+
     if (telInput.length == 9) {
         $(this).siblings().removeClass('hide');
         $(this).removeClass('alert');
@@ -74,6 +82,9 @@ $('#telInput').keyup(function () {
 $('#dateInput').blur(function () {
     let dateInput = $('#dateInput').val();
 
+    localStorage.setItem("Date", dateInput);
+
+
     if (dateInput.length > 2) {
         $(this).siblings().removeClass('hide');
         $(this).removeClass('alert');
@@ -89,6 +100,8 @@ $('#dateInput').blur(function () {
         $(this).removeClass('flyLabel');
     }
 });
+
+
 
 
 // Number Only
@@ -124,7 +137,36 @@ $(document).ready(function () {
     $("#telInput").inputFilter(function (value) {
         return /^\d*$/.test(value);    // Allow digits only, using a RegExp
     }, "გთხოვთ შეიყვანოთ ციფრები");
+
+
+    // დასეტილის აღება
+    if (localStorage.getItem("UserName") !== null) {
+        // alert(localStorage.getItem("UserName"));
+        $('#nameInput').val(localStorage.getItem("UserName"));
+        $('#nameInput').addClass('flyLabel');
+    }
+
+    if (localStorage.getItem("Email") !== null) {
+        // alert(localStorage.getItem("Email"));
+        $('#emailInput').val(localStorage.getItem("Email"));
+        $('#emailInput').addClass('flyLabel');
+    }
+
+    if (localStorage.getItem("Tel") !== null) {
+        // alert(localStorage.getItem("Tel"));
+        $('#telInput').val(localStorage.getItem("Tel"));
+        $('#telInput').addClass('flyLabel');
+    }
+
+    if (localStorage.getItem("Date") !== null) {
+        // alert(localStorage.getItem("Date"));
+        $('#dateInput').val(localStorage.getItem("Date"));
+        $('#dateInput').addClass('flyLabel');
+    }
+
 });
+
+
 
 
 
